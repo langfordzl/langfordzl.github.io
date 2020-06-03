@@ -1,0 +1,11 @@
+title: zach langford
+description: >- 
+    <a href='/index'>Home</a> | <a href='/publications'>Publications</a> | <a href='/presentations'>Presentations</a> | <a href='/contact'>Contact</a>
+    
+github_username:  langfordzl
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-hacker
+plugins:
+  - jekyll-feed
