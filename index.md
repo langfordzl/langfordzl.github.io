@@ -1,6 +1,6 @@
 # Welcome!
 
-Hi! I'm Zach Langford.  <img align="right" src="z1.png" style="zoom:20%;" />
+Hi! I'm Zach Langford.  <img align="right" src="z1.png" style="zoom:5%;" />
 
 I'm currently an R&D Associate at [Oak Ridge National Laboratory](https://www.ornl.gov)  in the Cyber and Applied Data Analytics Division. 
 
