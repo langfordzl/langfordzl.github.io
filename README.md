@@ -1,3 +1,3 @@
 # langfordzl.github.io
-website 
+website: 
 [langfordzl.github.io](https://langfordzl.github.io/)
