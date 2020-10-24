@@ -15,6 +15,3 @@ I enjoy working on integrating multiple sources of data for understanding comple
 Langford, Zachary L., Logan Eisenbeiser, and Matthew Vondal. 2019. “Robust Signal Classification Using Siamese Networks.” In *Proceedings of the Acm Workshop on Wireless Security and Machine Learning (WiseML)*, 1–5. New York, NY, USA: Association for Computing Machinery. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
 
 Langford, Zachary L., Jitendra Kumar, Forrest M. Hoffman, Amy L. Breen, and Colleen M. Iversen. 2019. “Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural Networks.” *Remote Sensing* 11 (1): 69. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
-
-
-
