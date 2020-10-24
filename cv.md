@@ -32,36 +32,19 @@ __BSc, University of Alabama in Huntsville__
 
 A list is also available [online](https://scholar.google.co.uk/citations?hl=en&user=8XedxuAAAAAJ&view_op=list_works&sortby=pubdate)
  
-- Langford, Zachary L., Logan Eisenbeiser, and Matthew Vondal. 2019. “Robust Signal Classification Using Siamese Networks.” In *Proceedings of the Acm Workshop on Wireless Security and Machine Learning (WiseML)*, 1–5. New York, NY, USA: Association for Computing Machinery. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
-<details>
-<summary><code>Bibtex</code></summary>
-   
-  ```@Article{Langford_RemoteSens_20190102,
- author		= {Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman and Amy L. Breen and Colleen M. Iversen},
- title		= {{Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural Networks}},
- journal	= {Remote Sensing},
- volume		= 11,
- number		= 1,
- pages		= 69,
- article_number	= 69,
- doi		= {10.3390/rs11010069},
- day		= 2,
- month		= jan,
- year		= 2019
- ```
-</details>
+- Robust Signal Classification Using Siamese Networks. In Proceedings of the Acm Workshop on Wireless Security and Machine Learning (WiseML), 1–5. New York, NY, USA: Association for Computing Machinery. 2019. Langford, Zachary L., Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
 
 
 - Deep Transfer Learning with Field-Based Measurements for Large Area Classification. In Proceedings of the 2019 IEEE International Conference on Data Mining Workshops (ICDMW 2019). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November2019.Zachary L. Langford and Jitendra Kumar and Forrest M. Homan.
 
-- Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional NeuralNetworks.Remote Sensing, 11(1):69, January 2019.Zachary L. Langford and Jitendra Kumar and Forrest M. Homan and Amy L. Breen and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
+- Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional NeuralNetworks.Remote Sensing, 11(1):69, 2019.Zachary L. Langford and Jitendra Kumar and Forrest M. Homan and Amy L. Breen and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
 
 
 - Wildfire mapping in Interior Alaska using deep neural networks on imbalanced datasets.In Proceedings of the 2018 IEEE International Conference on Data Mining Workshops (ICDMW 2018). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November 2018. Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman.
 
 #### <a name="pats"></a>Patents
 
-Robert J. Klein and John H. Aughey and Zachary L. Langford.Apparatus, system, and method for generating an image, 2017.US20190158805A1.
+- Robert J. Klein and John H. Aughey and Zachary L. Langford.Apparatus, system, and method for generating an image, 2017.US20190158805A1.
 
 ## <a name="exp"></a>Experience
 
