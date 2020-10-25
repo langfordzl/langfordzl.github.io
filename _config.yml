@@ -6,6 +6,6 @@ github_username:  langfordzl
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
