@@ -1,0 +1,25 @@
+img {
+    border: 1px solid #777;
+}
+
+
+/*
+Makes line numbers not selectable, and provides space around them.
+See http://www.minh.io/blog/2015/06/28/jekyll-line-numbers/
+*/
+
+.lineno {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    color: #777;
+    padding-right: 10px;
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+
