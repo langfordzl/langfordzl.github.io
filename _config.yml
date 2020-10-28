@@ -7,9 +7,3 @@ markdown: kramdown
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
-
-```{css my-header-colors, echo = FALSE}
-.page-header {
-    background-image: linear-gradient(120deg, red, orange);
-}
-```
