@@ -1,4 +1,8 @@
-# Zach Langford
+---
+layout: default
+title: CV
+description: This is just cv page
+---
 
 ## Quick Links: <br>
 [Publications](#pubs) <br>
@@ -30,16 +34,25 @@ A list is also available [online](https://scholar.google.co.uk/citations?hl=en&u
 - Robust Signal Classification Using Siamese Networks. In Proceedings of the Acm Workshop on Wireless Security and Machine Learning (WiseML), 1–5. New York, NY, USA: Association for Computing Machinery. 2019. Langford, Zachary L., Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
 
 
-- Deep Transfer Learning with Field-Based Measurements for Large Area Classification.In Proceedings of the 2019 IEEE International Conference on Data Mining Workshops (ICDMW 2019). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November2019.Zachary L. Langford and Jitendra Kumar and Forrest M. Homan.
+- Deep Transfer Learning with Field-Based Measurements for Large Area Classification.
+In Proceedings of the 2019 IEEE International Conference on Data Mining Workshops (ICDMW 2019). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November
+2019.
+Zachary L. Langford and Jitendra Kumar and Forrest M. Homan.
 
-- Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional NeuralNetworks.Remote Sensing, 11(1):69, 2019.Zachary L. Langford and Jitendra Kumar and Forrest M. Homan and Amy L. Breen and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
+- Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural
+Networks.
+Remote Sensing, 11(1):69, 2019.
+Zachary L. Langford and Jitendra Kumar and Forrest M. Homan and Amy L. Breen and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
 
 
-- Wildfire mapping in Interior Alaska using deep neural networks on imbalanced datasets.In Proceedings of the 2018 IEEE International Conference on Data Mining Workshops (ICDMW 2018). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November 2018. Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman.
+- Wildfire mapping in Interior Alaska using deep neural networks on imbalanced datasets.
+In Proceedings of the 2018 IEEE International Conference on Data Mining Workshops (ICDMW 2018). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November 2018. Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman.
 
 #### <a name="pats"></a>Patents
 
-- Robert J. Klein and John H. Aughey and Zachary L. Langford.Apparatus, system, and method for generating an image, 2017.US20190158805A1.
+- Robert J. Klein and John H. Aughey and Zachary L. Langford.
+Apparatus, system, and method for generating an image, 2017.
+US20190158805A1.
 
 ## <a name="exp"></a>Experience
 
@@ -48,16 +61,23 @@ __R&D Associate__, Oak Ridge National Laboratory
 
 - Working in the Cyber Resilience and Intelligence Division at ORNL.
 -  Developing data analytics techniques (e.g. anomaly detection, visualizations, machine learning, etc.) for national security projects.
--  Machine learning algorithms for rapid development of digital twins of industrial control systems.-  Contributing to technology for over-the-air machine learning applications for secure communications.
+-  Machine learning algorithms for rapid development of digital twins of industrial control systems.
+-  Contributing to technology for over-the-air machine learning applications for secure communications.
 
 `2019`  <br>
 __Research Scientist__, Virginia Tech
 
--  Developed new approaches for signal classification using deep learning methods.-  Developed a Generative Adversarial Network modeling framework of latent space for extracting wanted features of syntheticimages.-  Contributed to Bayesian networks for understanding the likelihoods of known causes and contributing factors.
+-  Developed new approaches for signal classification using deep learning methods.
+-  Developed a Generative Adversarial Network modeling framework of latent space for extracting wanted features of synthetic
+images.
+-  Contributed to Bayesian networks for understanding the likelihoods of known causes and contributing factors.
 
 `2016-2019`  <br>
 __Advanced Technologist__, Boeing Research & Technology
--  Contributed to object detection approaches on aerial platforms.-  Developed anomaly detection approach for identifying manufacturing defects.-  Hyperspectral remote sensing UAV sensor modeling for methane detection.
+
+-  Contributed to object detection approaches on aerial platforms.
+-  Developed anomaly detection approach for identifying manufacturing defects.
+-  Hyperspectral remote sensing UAV sensor modeling for methane detection.
 
 `2014-2016`  <br>
 __Graduate Research Assistant__, University of Tennessee/ORNL
