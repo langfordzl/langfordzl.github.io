@@ -1,3 +1,11 @@
+---
+layout: contact
+title: Contact2
+description: This is just another contact page
+---
+
 # Contact
 
-**zlangfor@vols.utk.edu**
+## Email
+
+[zlangfor @ vols.utk.edu]{.monospace}
