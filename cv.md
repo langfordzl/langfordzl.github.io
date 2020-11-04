@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: cv
 title: CV
-description: This is just cv page
+description: This is just another cv page
 ---
 
 ## Quick Links: <br>
