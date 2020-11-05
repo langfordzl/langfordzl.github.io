@@ -1,6 +1,6 @@
 # Welcome!
 
-<img src="z1.png" width="100" />
+<img src="z1.png" width="200" />
 
 ## Background
 I'm currently an R&D Associate at [Oak Ridge National Laboratory](https://www.ornl.gov)  in the Cyber and Applied Data Analytics Division.

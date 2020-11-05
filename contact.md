@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Contact2
+title: Contact
 description: This is just another contact page
 ---
 
