@@ -8,4 +8,4 @@ description: This is just another contact page
 
 ## Email
 
-[zlangfor @ vols.utk.edu]{.monospace}
+zlangfor @ vols.utk.edu
