@@ -17,13 +17,15 @@ Data science applications in engineering systems, environmental modeling, spatia
 ## Education
 
 `2017`
-__PhD, University of Tennessee <br> Energy Science and Engineering__
+__PhD, University of Tennessee <br> Energy Science and Engineering <br> Concentration: Remote Sensing, Machine Learning, Spatial Statistics__
 
 `2013`
-__MSc, Pennsylvania State University <br> Civil Engineering__
+__MSc, Pennsylvania State University <br> Civil Engineering <br> Concentration: Remote Sensing and Data Mining__
 
 `2011`
-__BSc, University of Alabama in Huntsville__
+__BSc, University of Alabama in Huntsville <br> Earth System Science (Focus: GIS, Remote Sensing, Hydrology) <br>
+Minor in Mathematics__
+
 
 ## <a name="pubs"></a>Recent Publications
 
