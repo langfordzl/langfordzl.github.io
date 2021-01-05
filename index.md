@@ -3,11 +3,11 @@
 <img src="z1.png" width="200" />
 
 ## Background
-I'm currently an R&D Associate at [Oak Ridge National Laboratory](https://www.ornl.gov)  in the Cyber and Applied Data Analytics Division.
+I'm currently an R&D Associate at [Oak Ridge National Laboratory](https://www.ornl.gov)  in the Cyber Resilience and Intelligence Division.
 
 I received my PhD from [University of Tennessee](https://bredesencenter.utk.edu), advised by [Dr. Jitendra Kumar](https://climatemodeling.org/~jkumar/) and [Dr. Forrest Hoffman](https://climatemodeling.org/~forrest/). I did my masters in civil engineering at Penn State in University Park, PA, advised by [Dr. Michael Gooseff](http://goosefflab.weebly.com/).
 
-In the past, I have spent time at Virgina Tech working on machine learning projects for national security and Boeing Research & Technology working on geospatial analytics projects for the aerospace industry.
+In the past, I have spent time at Virgina Tech working on machine learning projects for national security and Boeing Research & Technology developing geospatial analytics projects for the aerospace industry.
 
 ## Research Interests
 

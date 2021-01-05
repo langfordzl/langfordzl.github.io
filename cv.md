@@ -1,7 +1,7 @@
 ---
 layout: cv
 title: CV
-description: Thus is dust another cv page
+description: Thus is just another cv page
 ---
 
 ## Quick links: <br>
