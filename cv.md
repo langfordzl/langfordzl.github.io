@@ -37,7 +37,7 @@ Zachary L. Langford, Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921
 * Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural
 Networks.
 Remote Sensing, 11(1):69, 2019. <br>
-Zachary L. Langford, Jitendra Kumar, Forrest M. Hoffman, Amy L. Breen, and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
+Zachary L. Langford, Jitendra Kumar, Forrest M. Hoffman, Amy L. Breen, and Colleen M. Iversen. <br> doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
 
 
 #### <a name="pats"></a>Patents
