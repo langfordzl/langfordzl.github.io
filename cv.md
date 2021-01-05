@@ -2,7 +2,8 @@
 layout: cv
 title: CV
 description: Thus is dust another cv page
----i
+---
+
 ## Quick links: <br>
 [Publications](#pubs) <br>
 [Experience](#exp)
@@ -30,18 +31,11 @@ A list is also available [online](https://scholar.google.co.uk/citations?hl=en&u
 
 * Robust Signal Classification Using Siamese Networks. In Proceedings of the ACM Workshop on Wireless Security and Machine Learning (WiseML), 1–5. New York, NY, USA: Association for Computing Machinery. 2019. Langford, Zachary L., Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
 
-* Deep Transfer Learning with Field-Based Measurements for Large Area Classification.
-In Proceedings of the 2019 IEEE International Conference on Data Mining Workshops (ICDMW 2019). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November
-2019.
-Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman.
-
 * Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural
 Networks.
 Remote Sensing, 11(1):69, 2019.
 Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman and Amy L. Breen and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
 
-* Wildfire Mapping in Interior Alaska Using Deep Neural Networks on Imbalanced Datasets.
-In Proceedings of the 2018 IEEE International Conference on Data Mining Workshops (ICDMW 2018). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November 2018. Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman.
 
 #### <a name="pats"></a>Patents
 
