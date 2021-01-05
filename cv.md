@@ -25,23 +25,23 @@ __MSc, Pennsylvania State University <br> Civil Engineering__
 `2011`
 __BSc, University of Alabama in Huntsville__
 
-## <a name="pubs"></a>Publications
+## <a name="pubs"></a>Recent Publications
 
 A list is also available [online](https://scholar.google.co.uk/citations?hl=en&user=8XedxuAAAAAJ&view_op=list_works&sortby=pubdate)
 
-* Robust Signal Classification Using Siamese Networks. In Proceedings of the Acm Workshop on Wireless Security and Machine Learning (WiseML), 1–5. New York, NY, USA: Association for Computing Machinery. 2019. Langford, Zachary L., Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
+* Robust Signal Classification Using Siamese Networks. In Proceedings of the ACM Workshop on Wireless Security and Machine Learning (WiseML), 1–5. New York, NY, USA: Association for Computing Machinery. 2019. Langford, Zachary L., Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
 
 * Deep Transfer Learning with Field-Based Measurements for Large Area Classification.
 In Proceedings of the 2019 IEEE International Conference on Data Mining Workshops (ICDMW 2019). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November
 2019.
-Zachary L. Langford and Jitendra Kumar and Forrest M. Homan.
+Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman.
 
 * Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural
 Networks.
 Remote Sensing, 11(1):69, 2019.
-Zachary L. Langford and Jitendra Kumar and Forrest M. Homan and Amy L. Breen and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
+Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman and Amy L. Breen and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
 
-* Wildfire mapping in Interior Alaska using deep neural networks on imbalanced datasets.
+* Wildfire Mapping in Interior Alaska Using Deep Neural Networks on Imbalanced Datasets.
 In Proceedings of the 2018 IEEE International Conference on Data Mining Workshops (ICDMW 2018). Institute of Electrical and Electronics Engineers (IEEE), Conference Publishing Services (CPS), November 2018. Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman.
 
 #### <a name="pats"></a>Patents
