@@ -31,18 +31,19 @@ Minor in Mathematics__
 
 A list is also available [online](https://scholar.google.co.uk/citations?hl=en&user=8XedxuAAAAAJ&view_op=list_works&sortby=pubdate)
 
-* Robust Signal Classification Using Siamese Networks. In Proceedings of the ACM Workshop on Wireless Security and Machine Learning (WiseML), 1–5. New York, NY, USA: Association for Computing Machinery. 2019. Langford, Zachary L., Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
+* Robust Signal Classification Using Siamese Networks. In Proceedings of the ACM Workshop on Wireless Security and Machine Learning (WiseML), 1-5. New York, NY, USA: Association for Computing Machinery. 2019. <br>
+Zachary L. Langford, Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
 
 * Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural
 Networks.
-Remote Sensing, 11(1):69, 2019.
-Zachary L. Langford and Jitendra Kumar and Forrest M. Hoffman and Amy L. Breen and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
+Remote Sensing, 11(1):69, 2019. <br>
+Zachary L. Langford, Jitendra Kumar, Forrest M. Hoffman, Amy L. Breen, and Colleen M. Iversen. doi:[10.3390/rs11010069](https://doi.org/10.3390/rs11010069).
 
 
 #### <a name="pats"></a>Patents
 
-* Robert J. Klein and John H. Aughey and Zachary L. Langford.
-Apparatus, system, and method for generating an image, 2017.
+* Robert J. Klein, John H. Aughey, and Zachary L. Langford.
+Apparatus, System, and Method for Generating an Image, 2017.
 US20190158805A1.
 
 ## <a name="exp"></a>Experience
