@@ -32,7 +32,7 @@ Minor in Mathematics__
 A list is also available [online](https://scholar.google.co.uk/citations?hl=en&user=8XedxuAAAAAJ&view_op=list_works&sortby=pubdate)
 
 * Robust Signal Classification Using Siamese Networks. In Proceedings of the ACM Workshop on Wireless Security and Machine Learning (WiseML), 1-5. New York, NY, USA: Association for Computing Machinery. 2019. <br>
-Zachary L. Langford, Logan Eisenbeiser, and Matthew Vondal. doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
+Zachary L. Langford, Logan Eisenbeiser, and Matthew Vondal. <br> doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
 
 * Arctic Vegetation Mapping Using Unsupervised Training Datasets and Convolutional Neural
 Networks.
