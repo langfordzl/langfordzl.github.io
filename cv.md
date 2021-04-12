@@ -76,4 +76,4 @@ __Graduate Research Assistant__, University of Tennessee/ORNL
 
 * Provided geospatial datasets of Arctic ecosystems for parameterizing land surface models for climate change research.
 * Developed multi-sensor fusion frameworks of satellite imagery and ground measurements for retrieving surface parameters.
-* Developed automated algorithms for identifying and understanding disturbance threats (e.g., wildres) using spatiotemporal datasets in Google Earth Engine.
+* Developed automated algorithms for identifying and understanding disturbance threats (e.g., wildfires) using spatiotemporal datasets in Google Earth Engine.
