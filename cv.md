@@ -49,7 +49,7 @@ US20190158805A1.
 ## <a name="exp"></a>Experience
 
 `2019-Present` <br>
-__R&D Associate__, Oak Ridge National Laboratory
+__R&D Staff__, Oak Ridge National Laboratory
 
 * Working in the Cyber Resilience and Intelligence Division at ORNL.
 * Developing data analytics techniques (e.g. anomaly detection, visualizations, machine learning, etc.) for national security projects.
