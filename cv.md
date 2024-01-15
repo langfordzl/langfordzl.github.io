@@ -29,7 +29,7 @@ Minor in Mathematics__
 
 ## <a name="pubs"></a>Recent Publications
 
-A list is also available [online](https://scholar.google.co.uk/citations?hl=en&user=8XedxuAAAAAJ&view_op=list_works&sortby=pubdate)
+A list is also available [online](https://scholar.google.com/citations?hl=en&user=8Rz0M0QAAAAJ&view_op=list_works&sortby=pubdate)
 
 * Robust Signal Classification Using Siamese Networks. In Proceedings of the ACM Workshop on Wireless Security and Machine Learning (WiseML), 1-5. New York, NY, USA: Association for Computing Machinery. 2019. <br>
 Zachary L. Langford, Logan Eisenbeiser, and Matthew Vondal. <br> doi:[10.1145/3324921.3328781](https://doi.org/10.1145/3324921.3328781).
@@ -47,8 +47,12 @@ Apparatus, System, and Method for Generating an Image, 2017.
 US20190158805A1.
 
 ## <a name="exp"></a>Experience
+`2023-Present` <br>
+__Specialist Solutions Architect__, Databricks
 
-`2019-Present` <br>
+* Attain expertise in Databricks products including Data Science & Engineering, Machine Learning, SQL, and GenAI.
+
+`2019-2023` <br>
 __R&D Staff__, Oak Ridge National Laboratory
 
 * Working in the Cyber Resilience and Intelligence Division at ORNL.

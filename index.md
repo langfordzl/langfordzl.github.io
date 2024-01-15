@@ -3,7 +3,6 @@
 <img src="z1.png" width="200" />
 
 ## Background
-I'm currently an R&D Associate at [Oak Ridge National Laboratory](https://www.ornl.gov)  in the Cyber Resilience and Intelligence Division.
 
 I received my PhD from [University of Tennessee](https://bredesencenter.utk.edu), advised by [Dr. Jitendra Kumar](https://climatemodeling.org/~jkumar/) and [Dr. Forrest Hoffman](https://climatemodeling.org/~forrest/). I did my masters in civil engineering at Penn State in University Park, PA, advised by [Dr. Michael Gooseff](http://goosefflab.weebly.com/).
 
@@ -15,4 +14,4 @@ I enjoy working on integrating multiple sources of data for understanding comple
 
 ## Quick Links
 [Publications](./cv.md#pubs) <br>
-[Google Scholar](https://scholar.google.co.uk/citations?hl=en&user=8XedxuAAAAAJ&view_op=list_works&sortby=pubdate)
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=8Rz0M0QAAAAJ&view_op=list_works&sortby=pubdate)
