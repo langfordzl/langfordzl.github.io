@@ -1,0 +1,81 @@
+name: Weekly CreepCast Episode Update
+on:
+  schedule:
+    - cron: '0 10 * * 1'
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install dependencies
+        run: pip install sentence-transformers faiss-cpu requests numpy rank_bm25 huggingface_hub beautifulsoup4
+      - name: Download scripts and cache from HuggingFace
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          from huggingface_hub import HfApi
+          import os
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          os.makedirs("cache", exist_ok=True)
+          files = [
+            "data_collector.py", "rag_engine.py",
+            "cache/tftc_posts.json",
+            "cache/faiss_index.idx", "cache/faiss_index_posts.json", "cache/faiss_index_chunks.json",
+          ]
+          for f in files:
+              api.hf_hub_download(repo_id="DrCreepyData/creepcast-story-finder",
+                                  repo_type="space", filename=f, local_dir=".")
+              print(f"Downloaded {f}")
+          EOF
+      - name: Rescrape episodes and rebuild episode index
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import json, os
+          from data_collector import scrape_creepcast_wiki, enrich_episodes_with_story_text
+          from rag_engine import CreepcastRAG
+
+          os.makedirs("cache", exist_ok=True)
+          print("Scraping episodes...")
+          episodes = scrape_creepcast_wiki()
+          with open("cache/episodes.json", "w") as f:
+              json.dump(episodes, f, ensure_ascii=False)
+          print(f"Got {len(episodes)} episodes")
+
+          with open("cache/tftc_posts.json") as f:
+              posts = json.load(f)
+
+          print("Enriching with nosleep sources...")
+          episodes = enrich_episodes_with_story_text(episodes, posts)
+          with open("cache/episodes_enriched.json", "w") as f:
+              json.dump(episodes, f, ensure_ascii=False)
+
+          print("Rebuilding episode index...")
+          rag = CreepcastRAG()
+          rag._load_story_index()
+          rag.build_episode_index(episodes)
+          rag.save_index()
+          print("Done.")
+          EOF
+      - name: Push updated episodes to HuggingFace
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          from huggingface_hub import HfApi
+          import os
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          for f in ["cache/episodes.json", "cache/episodes_enriched.json",
+                    "cache/episode_index.idx", "cache/episode_index_data.json",
+                    "cache/episode_index_chunks.json", "data_collector.py"]:
+              api.upload_file(path_or_fileobj=f, path_in_repo=f,
+                              repo_id="DrCreepyData/creepcast-story-finder", repo_type="space")
+              print(f"Uploaded {f}")
+          EOF
