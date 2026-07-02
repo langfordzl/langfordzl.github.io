@@ -7,37 +7,47 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout creepcast code
-        run: |
-          git clone https://x-access-token:${{ github.token }}@github.com/langfordzl/langfordzl.github.io.git repo
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-          cache: 'pip'
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: creepcast-pip-${{ hashFiles('**/requirements*.txt') }}
+          restore-keys: creepcast-pip-
+
       - name: Install dependencies
-        run: |
-          pip install sentence-transformers faiss-cpu requests numpy rank_bm25 huggingface_hub
-      - name: Download existing cache from HuggingFace
+        run: pip install sentence-transformers faiss-cpu requests numpy rank_bm25 huggingface_hub beautifulsoup4
+
+      - name: Download scripts and cache from HuggingFace
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           python3 - <<'EOF'
-          from huggingface_hub import HfApi, hf_hub_download
+          from huggingface_hub import HfApi
           import os
           api = HfApi(token=os.environ["HF_TOKEN"])
           os.makedirs("cache", exist_ok=True)
-          for f in ["cache/tftc_posts.json", "cache/faiss_index.idx",
-                    "cache/faiss_index_posts.json", "cache/faiss_index_chunks.json"]:
-              api.hf_hub_download(repo_id="DrCreepyData/creepcast-story-finder",
-                                  repo_type="space", filename=f, local_dir=".")
-          print("Downloaded cache files")
+          files = [
+            "update_posts.py", "rag_engine.py",
+            "cache/tftc_posts.json",
+            "cache/faiss_index.idx",
+            "cache/faiss_index_posts.json",
+            "cache/faiss_index_chunks.json",
+          ]
+          for f in files:
+              api.hf_hub_download(
+                repo_id="DrCreepyData/creepcast-story-finder",
+                repo_type="space", filename=f, local_dir=".")
+              print(f"Downloaded {f}")
           EOF
+
       - name: Fetch new stories and update index
-        run: |
-          curl -s -o update_posts.py https://huggingface.co/spaces/DrCreepyData/creepcast-story-finder/raw/main/update_posts.py
-          curl -s -o rag_engine.py https://huggingface.co/spaces/DrCreepyData/creepcast-story-finder/raw/main/rag_engine.py
-          python3 update_posts.py
+        run: python3 update_posts.py
+
       - name: Push updated cache to HuggingFace
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -49,6 +59,7 @@ jobs:
           for f in ["cache/tftc_posts.json", "cache/faiss_index.idx",
                     "cache/faiss_index_posts.json", "cache/faiss_index_chunks.json"]:
               api.upload_file(path_or_fileobj=f, path_in_repo=f,
-                              repo_id="DrCreepyData/creepcast-story-finder", repo_type="space")
+                              repo_id="DrCreepyData/creepcast-story-finder",
+                              repo_type="space")
               print(f"Uploaded {f}")
           EOF
