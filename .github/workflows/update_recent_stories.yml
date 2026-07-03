@@ -54,7 +54,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python3 update_posts.py --days 90
+          python3 update_posts.py --count 2000
 
       - name: Push updated cache to HuggingFace (recent)
         env:
