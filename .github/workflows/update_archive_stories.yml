@@ -1,0 +1,69 @@
+name: Update CreepCast Archive Stories
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # Daily at 7am UTC (3am ET)
+  workflow_dispatch:
+
+jobs:
+  update-archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install huggingface_hub requests
+
+      - name: Download scripts and cache from HuggingFace (archive)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import os
+          from huggingface_hub import hf_hub_download
+          os.makedirs("cache", exist_ok=True)
+          files_to_download = [
+              ("update_posts.py", "."),
+              ("data_collector.py", "."),
+              ("rag_engine.py", "."),
+              ("requirements.txt", "."),
+              ("cache/tftc_posts.json", "cache"),
+              ("cache/faiss_index.idx", "cache"),
+              ("cache/faiss_index_chunks.json", "cache"),
+          ]
+          for fname, dest in files_to_download:
+              try:
+                  hf_hub_download(repo_id="DrCreepyData/creepcast-archive", filename=fname,
+                                  repo_type="space", token=os.environ["HF_TOKEN"], local_dir=".")
+                  print(f"Downloaded {fname}")
+              except Exception as e:
+                  print(f"Skip {fname}: {e}")
+          EOF
+
+      - name: Install app requirements
+        run: pip install -r requirements.txt || true
+
+      - name: Run update (full archive, no day limit)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python3 update_posts.py
+
+      - name: Push updated cache to HuggingFace (archive)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import os
+          from huggingface_hub import HfApi
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          repo = "DrCreepyData/creepcast-archive"
+          for fname in ["cache/tftc_posts.json", "cache/faiss_index.idx", "cache/faiss_index_chunks.json"]:
+              if os.path.exists(fname):
+                  api.upload_file(path_or_fileobj=fname, path_in_repo=fname,
+                                  repo_id=repo, repo_type="space")
+                  print(f"Uploaded {fname}")
+          EOF
