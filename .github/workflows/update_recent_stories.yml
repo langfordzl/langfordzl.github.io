@@ -36,6 +36,7 @@ jobs:
               ("requirements.txt", "."),
               ("cache/tftc_posts.json", "cache"),
               ("cache/faiss_index.idx", "cache"),
+              ("cache/faiss_index_posts.json", "cache"),
               ("cache/faiss_index_chunks.json", "cache"),
           ]
           for fname, dest in files_to_download:
@@ -50,11 +51,11 @@ jobs:
       - name: Install app requirements
         run: pip install -r requirements.txt || true
 
-      - name: Run update (recent only — last 90 days)
+      - name: Run update (recent only — most recent 5000 posts, no archive backfill)
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          python3 update_posts.py --count 2000
+          python3 update_posts.py --skip-older --count 5000
 
       - name: Push updated cache to HuggingFace (recent)
         env:
@@ -65,9 +66,27 @@ jobs:
           from huggingface_hub import HfApi
           api = HfApi(token=os.environ["HF_TOKEN"])
           repo = "DrCreepyData/creepcast-recent"
-          for fname in ["cache/tftc_posts.json", "cache/faiss_index.idx", "cache/faiss_index_chunks.json"]:
+          for fname in ["cache/tftc_posts.json", "cache/faiss_index.idx",
+                        "cache/faiss_index_posts.json", "cache/faiss_index_chunks.json"]:
               if os.path.exists(fname):
                   api.upload_file(path_or_fileobj=fname, path_in_repo=fname,
                                   repo_id=repo, repo_type="space")
                   print(f"Uploaded {fname}")
+          EOF
+
+      - name: Hand off evicted posts to the archive Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import os
+          from huggingface_hub import HfApi
+          overflow = "cache/overflow_posts.json"
+          if os.path.exists(overflow):
+              api = HfApi(token=os.environ["HF_TOKEN"])
+              api.upload_file(path_or_fileobj=overflow, path_in_repo="cache/incoming_overflow.json",
+                              repo_id="DrCreepyData/creepcast-archive", repo_type="space")
+              print("Uploaded overflow posts to creepcast-archive")
+          else:
+              print("No overflow posts to hand off")
           EOF
