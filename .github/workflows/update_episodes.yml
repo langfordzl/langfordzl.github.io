@@ -11,7 +11,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
       - name: Install dependencies
         run: pip install sentence-transformers faiss-cpu requests numpy rank_bm25 huggingface_hub beautifulsoup4
       - name: Download scripts and cache from HuggingFace
@@ -64,7 +63,7 @@ jobs:
           rag.save_index()
           print("Done.")
           EOF
-      - name: Push updated episodes to HuggingFace
+      - name: Push updated episodes to HuggingFace (both spaces)
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
@@ -72,10 +71,12 @@ jobs:
           from huggingface_hub import HfApi
           import os
           api = HfApi(token=os.environ["HF_TOKEN"])
-          for f in ["cache/episodes.json", "cache/episodes_enriched.json",
-                    "cache/episode_index.idx", "cache/episode_index_data.json",
-                    "cache/episode_index_chunks.json", "data_collector.py"]:
-              api.upload_file(path_or_fileobj=f, path_in_repo=f,
-                              repo_id="DrCreepyData/creepcast-story-finder", repo_type="space")
-              print(f"Uploaded {f}")
+          files = ["cache/episodes.json", "cache/episodes_enriched.json",
+                   "cache/episode_index.idx", "cache/episode_index_data.json",
+                   "cache/episode_index_chunks.json", "data_collector.py"]
+          for repo in ["DrCreepyData/creepcast-story-finder", "DrCreepyData/creepcast-archive"]:
+              for f in files:
+                  api.upload_file(path_or_fileobj=f, path_in_repo=f,
+                                  repo_id=repo, repo_type="space")
+                  print(f"Uploaded {f} to {repo}")
           EOF
