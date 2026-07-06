@@ -17,7 +17,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install huggingface_hub requests
+          pip install huggingface_hub requests numpy sentence-transformers faiss-cpu
 
       - name: Download scripts and cache from HuggingFace (recent)
         env:
@@ -31,9 +31,7 @@ jobs:
           os.makedirs("cache", exist_ok=True)
           files_to_download = [
               ("update_posts.py", "."),
-              ("data_collector.py", "."),
               ("rag_engine.py", "."),
-              ("requirements.txt", "."),
               ("cache/tftc_posts.json", "cache"),
               ("cache/faiss_index.idx", "cache"),
               ("cache/faiss_index_posts.json", "cache"),
@@ -47,9 +45,6 @@ jobs:
               except Exception as e:
                   print(f"Skip {fname}: {e}")
           EOF
-
-      - name: Install app requirements
-        run: pip install -r requirements.txt || true
 
       - name: Run update (recent only — most recent 5000 posts, no archive backfill)
         env:
