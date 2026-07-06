@@ -1,4 +1,4 @@
-name: Update CreepCast Recent Stories
+name: Update CreepCast Story Finder (recent)
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
           import os
           from huggingface_hub import hf_hub_download, HfApi
           api = HfApi(token=os.environ["HF_TOKEN"])
-          repo = "DrCreepyData/creepcast-recent"
+          repo = "DrCreepyData/creepcast-story-finder"
           os.makedirs("cache", exist_ok=True)
           files_to_download = [
               ("update_posts.py", "."),
@@ -65,9 +65,10 @@ jobs:
           import os
           from huggingface_hub import HfApi
           api = HfApi(token=os.environ["HF_TOKEN"])
-          repo = "DrCreepyData/creepcast-recent"
+          repo = "DrCreepyData/creepcast-story-finder"
           for fname in ["cache/tftc_posts.json", "cache/faiss_index.idx",
-                        "cache/faiss_index_posts.json", "cache/faiss_index_chunks.json"]:
+                        "cache/faiss_index_posts.json", "cache/faiss_index_chunks.json",
+                        "cache/last_updated.json"]:
               if os.path.exists(fname):
                   api.upload_file(path_or_fileobj=fname, path_in_repo=fname,
                                   repo_id=repo, repo_type="space")

@@ -79,7 +79,8 @@ jobs:
           api = HfApi(token=os.environ["HF_TOKEN"])
           repo = "DrCreepyData/creepcast-archive"
           for fname in ["cache/tftc_posts.json", "cache/faiss_index.idx",
-                        "cache/faiss_index_posts.json", "cache/faiss_index_chunks.json"]:
+                        "cache/faiss_index_posts.json", "cache/faiss_index_chunks.json",
+                        "cache/last_updated.json"]:
               if os.path.exists(fname):
                   api.upload_file(path_or_fileobj=fname, path_in_repo=fname,
                                   repo_id=repo, repo_type="space")
